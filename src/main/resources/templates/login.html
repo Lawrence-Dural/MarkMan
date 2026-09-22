@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>MarkMan — Sign in</title>
+</head>
+<body>
+<h1>MarkMan</h1>
+<p th:if="${param.error}">Incorrect organization code, username or password.</p>
+<p th:if="${param.logout}">You've been signed out.</p>
+
+<form method="post" action="/login">
+    <label>
+        Organization code
+        <input type="text" name="orgCode" required autocomplete="organization" autofocus/>
+    </label>
+    <label>
+        Username
+        <input type="text" name="username" required autocomplete="username"/>
+    </label>
+    <label>
+        Password
+        <input type="password" name="password" required autocomplete="current-password"/>
+    </label>
+    <button type="submit">Sign in</button>
+</form>
+</body>
+</html>

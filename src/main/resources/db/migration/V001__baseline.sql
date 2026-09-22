@@ -1,5 +1,5 @@
--- Phase 1 baseline.
--- Domain tables (organization, user, role, permission, ...) land in Phase 2
--- as their own dedicated migrations, per module.
-
-create extension if not exists pgcrypto;
+-- Phase 1 baseline. Intentionally empty of tables.
+--
+-- Primary keys are UUIDv7 values generated in application code
+-- (com.markman.core.Uuid7), not by the database, so no UUID-generation
+-- extension is needed here. Domain tables start with V002.

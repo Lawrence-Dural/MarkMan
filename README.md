@@ -5,9 +5,13 @@ First commercial configuration: **MarkMan POS** — "Sell. Track. Manage."
 
 ## Status
 
-Phase 1 (project scaffold) — no domain features yet. See `ARCHITECTURE.md`
-(added once Phase 0 notes are written up) for the full V1 scope and module
-boundaries.
+Phase 2 (core identity & tenant isolation) — organization, user, role,
+permission, login, and the tenant-isolation test harness. See
+`ARCHITECTURE.md` for the full V1 scope, module boundaries, and the
+tenant-isolation model.
+
+Local login (dev profile only, seeded on startup): org code `DEMO`,
+username `owner`, password `password`.
 
 ## Stack
 
