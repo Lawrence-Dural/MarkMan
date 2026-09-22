@@ -1,0 +1,8 @@
+# Used by tests that don't rely on @ServiceConnection/Testcontainers auto-configuration.
+# Most integration tests instead get their datasource injected by Testcontainers directly.
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    clean-disabled: false
